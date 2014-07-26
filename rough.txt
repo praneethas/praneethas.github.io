@@ -1,0 +1,34 @@
+<div class="navbar navbar-default navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html"><h6 style="font-size: 25px;">Praneeth A S</h6></a>
+          <div class="collapse navbar-collapse nav-collapse">
+            <ul class="nav nav-pills" id="MainTabs">
+              <li class="active">
+                <a data-target="#about" href="tabs/about.html" data-toggle="tab"><h6 style="font-size: 15px;">About</h6></a>
+              </li>
+              <li class="">
+                <a data-target="#prog" href="tabs/prog.html" data-toggle="tab"><h6 style="font-size: 15px;">Programming</h6></a>
+              </li>
+              <li class="">
+                <a data-target="#contact" href="tabs/contact.html" data-toggle="tab"><h6 style="font-size: 15px;">Contact Me</h6></a>
+              </li>
+              <li class="">
+                <a data-target="#gallery" href="tabs/gallery.html" data-toggle="tab"><h6 style="font-size: 15px;">Gallery</h6></a>
+              </li>
+              <li class="">
+                <a data-target="#books" href="tabs/books.html" data-toggle="tab"><h6 style="font-size: 15px;">Books</h6></a>
+              </li>
+              <li class="">
+                <a data-target="#resume" href="tabs/resume.html" data-toggle="tab"><h6 style="font-size: 15px;">Resume</h6></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>

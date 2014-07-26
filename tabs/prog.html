@@ -1,0 +1,99 @@
+<head>
+	<!--<link href="http://home.iitj.ac.in/~praneetha/versions/version6/css/prettify/prettify.css" type="text/css" rel="stylesheet" />-->
+	<link href="css/prism/prism.css" type="text/css" rel="stylesheet" />
+	<!--<style type="text/css">
+		div.well::-webkit-scrollbar { 
+    		display: none; 
+		}
+		div.well::-webkit-scrollbar-track {
+			display: none;
+		}
+		 
+		/* Handle */
+		div.well::-webkit-scrollbar-thumb {
+			display: none;
+		}
+		div.well::-webkit-scrollbar-thumb:window-inactive {
+		  display: none; 
+		}
+	</style>-->
+	<!--<link href="http://home.iitj.ac.in/~praneetha/versions/version6/css/prettify/obsidian.css" type="text/css" rel="stylesheet" />-->
+</head>
+<body>
+	<center>
+	<div class="well" style="max-height=100%;">
+		<br/>
+		<!-- <button type="button" class="btn btn-primary btn-sm" id="linenos">
+			<div id="line">Show line nos.</div>
+		</button> -->
+		<!--<div style="display: flex; flex-direction: column;"> ul.style=style="flex: 0 0 auto" tab-content.style =   style="flex: 1 1 auto; overflow: scroll"-->
+			<ul class="nav nav-pills nav-justified" id="progTabs" >
+      			<li class="active"><a data-target="#c" data-toggle="tab">C</a></li>
+      			<li><a data-target="#cpp" data-toggle="tab">C++</a></li>
+      			<li><a data-target="#java" data-toggle="tab">Java</a></li>
+    		</ul>
+    	<!--</div>-->
+		<hr style="border-color: black;">
+		<div class="tab-content">
+      			<div class="tab-pane active" id="c">
+					<pre class="pre-scrollable" data-src="tabs/prog/c/hello.c"><code></code></pre>
+					<pre class="pre-scrollable" data-src="tabs/prog/c/hello.c"><code></code></pre>
+					<pre class="pre-scrollable" data-src="tabs/prog/c/hello.c"><code></code></pre>
+					<pre class="pre-scrollable" data-src="tabs/prog/c/hello.c"><code></code></pre>
+					<pre class="pre-scrollable" data-src="tabs/prog/c/hello.c"><code></code></pre>
+				</div>
+      			<div class="tab-pane" id="cpp">
+					<pre data-src="tabs/prog/cpp/hello.cpp"></pre>
+					<pre data-src="tabs/prog/cpp/hello.cpp"></pre>
+					<pre data-src="tabs/prog/cpp/hello.cpp"></pre>
+					<pre data-src="tabs/prog/cpp/printLCSDP.cpp"></pre>
+      			</div>
+      			<div class="tab-pane" id="java">
+					<pre data-src="tabs/prog/java/helloWorld.java"></pre>
+					<pre data-src="tabs/prog/java/helloWorld.java"></pre>
+					<pre data-src="tabs/prog/java/helloWorld.java"></pre>
+					<pre data-src="tabs/prog/java/helloWorld.java"></pre>
+      			</div>
+      		</div>
+        	
+		<br/><br/>
+	</div>
+	</center>
+	<!--<script src="http://home.iitj.ac.in/~praneetha/versions/version6/js/prettify/prettify.js"></script>-->
+	<script src="js/prism/prism.js"></script>
+        <!--<script src="js/dload2.js"></script>-->
+	<!--<script src="js/prism/prism-c.js" async></script>-->
+	<script type="text/javascript">
+		// Rerun Prism syntax highlighting on the current page
+		Prism.highlightAll();
+	</script>
+	<!-- <script>
+	$(document).ready( function(){
+		console.log("Button clicked");
+  		$("button#linenos").click( 
+  			function(){
+                	$("pre").toggleClass("line-numbers");
+			$("div#line").text(function(i,v){
+                        	console.log("Text: " + v);
+        
+	  		return v === "Show line nos." ? "Hide line nos." : "Show line nos.";
+      				}
+      			);
+			console.log("Button1 clicked");
+			console.log($("pre").hasClass("line-numbers"));
+  			}
+  		);
+	});
+	</script> -->
+	<script type="text/javascript" src="js/wellTabs.js"></script>
+</body>
+<!-- http://home.iitj.ac.in/~praneetha/versions/version6/ -->
+<!--<?prettify lang=c&skin=obsidian?>
+        <pre>
+        	#include<stdio.h>
+
+        	int main(){
+        		printf("Hello World\n");
+        		return 0;
+        	}
+        </pre>-->

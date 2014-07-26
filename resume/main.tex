@@ -1,0 +1,288 @@
+\documentclass[a4paper,10pt]{extarticle}
+\usepackage{booktabs}% http://ctan.org/pkg/booktabs
+\usepackage{array}%
+\newcolumntype{M}{>{\centering\arraybackslash}m{\dimexpr9.13cm-2\tabcolsep}}
+\usepackage{color}
+\usepackage{float}
+\usepackage{hhline}
+\usepackage{xcolor,colortbl}
+\definecolor{Gray}{gray}{0.85}
+\newcolumntype{g}{>{\columncolor{Gray}}c}
+\newcommand{\mc}[2]{\multicolumn{#1}{c}{#2}}
+\definecolor{LightCyan}{RGB}{219,240,253}
+\definecolor{DarkCyan}{RGB}{212,212,255}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\colorlet{WhiteC}{white}% to make the example compilable
+\colorlet{GreenC}{blue!60}% to make the example compilable
+\newcommand{\mycell}[2][c]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+\newcommand{\greencell}[1]{\textcolor{WhiteC}{\bfseries #1}\cellcolor{GreenC}}
+\newcommand{\bluecell}[1]{\textcolor{WhiteC}{\bfseries #1}\cellcolor{GreenC}}
+\titlespacing*{\subsection}
+{0pt}{0.2em}{0em}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{unicode-math}
+%\setmathfont{Calibri Bold.ttf}
+\definecolor{mycolor}{RGB}{255,255,255}
+\usepackage[framemethod=TikZ]{mdframed}
+\newmdenv[linecolor=blue,
+    outerlinewidth=0.5pt,
+    roundcorner=20pt,
+    innertopmargin=\baselineskip,
+    innerbottommargin=0.75\baselineskip,
+    innerrightmargin=20pt,
+    innerleftmargin=20pt,
+    backgroundcolor=white]{mybox}
+\usepackage[a4paper,bindingoffset=0.2in,left=0.20cm,right=0.5cm,top=0.6cm,bottom=0.1cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{%
+    pdfborder = {0 0 0}
+    %colorlinks=false,
+    %citecolor=black,
+    %filecolor=black,
+    %linkcolor=black,
+    %urlcolor=black
+}
+\usepackage{fontspec}
+\setmainfont{Calibri.ttf}
+\newcommand{\textbfcb}[1] {{\setmainfont{Calibri Bold.ttf}#1}}
+\newcommand{\textitci}[1] {{\setmainfont{Calibri Italic.ttf}#1}}
+\newcommand{\textbfmt}[2] {$\text{\setmainfont{Calibri Bold.ttf}#1}^{\text{\setmainfont{Calibri Bold.ttf}#2}}$}
+\newcommand{\textbfmtf}[5] {$\text{\setmathfont{Calibri Bold.ttf}#1}\text{\setmathfont{Calibri Bold.ttf}#2}^{\text{\setmainfont{Calibri Bold.ttf}#3}}{\text{\setmainfont{Calibri Bold.ttf}#4}}{\text{\setmainfont{Calibri Bold.ttf}#5}}$}
+\date{}
+\begin{document}
+
+
+\begin{mybox}
+
+{\LARGE\setmainfont{Calibri Bold.ttf}\textbf{Praneeth A S}}\\
+\begin{minipage}[l]{0.5\textwidth}
+B.Tech, Computer Science \& Engineering(\textbfmt{4}{th} year)\\
+IIT Jodhpur-342005. 
+\end{minipage}
+\hfill
+\begin{minipage}[r]{5cm}
+\renewcommand{\tabcolsep}{2pt}
+\begin{tabular}{r l}
+\underline{Email:} & \href{mailto:praneetha@iitj.ac.in}{{\color{blue}praneetha@iitj.ac.in}}	\\
+\underline{Phone No:} & (+91)9782053779\\
+\end{tabular}
+\end{minipage}
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.1pt}} 
+
+\subsection*{\colorbox{LightCyan}{\setmainfont{Calibri Bold.ttf}\textbf{Academic Qualifications}}}
+\begin{tabular}[h]{|>{\centering\arraybackslash}p{2.4cm}|>{\centering\arraybackslash}p{4cm}|>{\centering\arraybackslash}p{6cm}|>{\centering\arraybackslash}p{4.1cm}|}
+\hhline{|-|-|-|-|}
+\setmainfont{Calibri Bold.ttf}\textbf{Year} & \setmainfont{Calibri Bold.ttf}\textbf{Board/Degree}	& \setmainfont{Calibri Bold.ttf}\textbf{School/Institution} & \setmainfont{Calibri Bold.ttf}\textbf{CPI (/10)/Percentage (\%)} \tabularnewline \hhline{|-|-|-|-|}
+2011 - Present &	B. Tech(\textbfmt{5}{th} Semester) &	IIT Jodhpur &	8.81\\ \hline
+2011 &	Intermediate Board, AP &	  Narayana Junior College, Hyderabad &	95.1\\ \hline
+2009 &	CBSE Board &	Jindal Vidya Mandir &	97.8\\ \hline
+\end{tabular}
+\subsection*{\colorbox{LightCyan}{\setmainfont{Calibri Bold.ttf}\textbf{Areas of Interest}}}
+\begin{tabular}[h]{|M|M|}
+\hline
+Algorithms	& Programming \\ \hline
+Graph Theory &	Computer Networks \\ \hline
+\end{tabular}
+\subsection*{\colorbox{LightCyan}{\setmainfont{Calibri Bold.ttf}\textbf{Course Projects}}}
+\begin{tabular}[H]{|>{\raggedright\arraybackslash}p{5cm}|p{12.5cm}|}
+\hline
+\textbfcb{Sudoku Solver} | Artificial Intelligence | \textitci{Dr. K R Chowdhary} | \textitci{$6^{\text{th}}$ Semester} &  Various artificial intelligence techniques like backtrack, genetic algorithms, simulated annealing were used to solve Sudoku trying to reduce time and search space for larger dimesion sudoku's.\\ \hline
+\textbfcb{XML Parser} | Java | \textitci{Dr. Gaurav Harit} | \textitci{$6^{\text{th}}$ Semester}&  Software parses an XML Document for syntax errors \& spelling errors. Draws XML Tree with options for modification, redrawing tree \& dumping back to XML.\\ \hline
+\textbfcb{Air Traffic Control Software} | Python, Pygame | \textitci{Dr. Gaurav Harit} | \textitci{$5^{\text{th}}$ Semester}&  Organize aircraft arrival to runway.
+Ensure no collisions occur, organize and expedite the ﬂow of traﬃc, and provide Information and other support for pilots.\\ \hline
+\textbfcb{Matrix Multiplication} | 8085 | \textitci{Dr. K R Chowdhary} | \textitci{$5^{\text{th}}$ Semester} & Implemented multiplication of matrices m $\times$ n \& n $\times$ p.\\ \hline
+\textbfcb{Properties of Hamming Graphs} | Discrete Mathematics | \textitci{Dr. Bibhas Adhikari} | \textitci{$4^{\text{th}}$ Semester} & Studied properties such as eulerian graph, connectivity, regularity, diameter etc.,\\ \hline
+\textbfcb{ATM Interface} | C | \textitci{Dr. Ashutosh Dwivedi} | \textitci{$1^{\text{st}}$ Semester} & Non-GUI style interface for ATM transactions like printing transactions,  keeping record of transactions in a separate log ﬁle etc., Libraries used - <unistd.h>, <time.h>\\ \hline
+\textbfcb{Graph Algorithms} | Algorithm Design | \textitci{Dr. Anupam Gupta} | \textitci{Summer 2013} & Awakening a swarm of robots given an awakened robot. Time Complexity: $\Theta (n^2 \log n)$. Assumptions: Positions of sleeping robots known.\\ \hline
+\end{tabular}
+\subsection*{\colorbox{LightCyan}{\setmainfont{Calibri Bold.ttf}\textbf{Intern}}}
+\begin{tabular}[H]{|p{5cm}|p{12.5cm}|}
+\hline
+\textbfcb{USB} | Vaisakh N | AllGo Embedded Systems | Summer 2014& \\ \hline
+\end{tabular}
+\iffalse
+\begin{tabular}[H]{|p{3.5cm}|>{\centering\arraybackslash}p{3.5cm}|p{10cm}|}
+\hline
+Ram & Ram & Ram\\ \hline
+\greencell{QueryString} &
+\mycell[>{\centering\arraybackslash}p{3.5cm}p{10cm}|]{%
+  start= & The number of the first person to return \\
+  end= & The number of the last person to return} \\ \hline
+\greencell{Properties of \newline Hamming graphs}&
+\mycell[>{\centering\arraybackslash}p{3.5cm}p{10cm}|]{
+start= & The number of the first person to return \\
+  end= & The number of the last person to return \\
+  end= & The number of the last person to return \\
+  start= & The number of the first person to return} \\ \hline
+\end{tabular}
+\fi
+\subsection*{\colorbox{LightCyan}{\setmainfont{Calibri Bold.ttf}\textbf{Technical Skills}}}
+\begin{tabular}[H]{|>{\raggedleft\arraybackslash}p{5cm}|p{12.5cm}|}
+\hhline{|-|-|}
+\setmainfont{Calibri Bold.ttf}\textbf{Programming Languages} &	C, Java, Python, Latex \\ \hhline{|-|-|}
+\setmainfont{Calibri Bold.ttf}\textbf{Microprocessor} &	8085 \\ \hhline{|-|-|}
+\setmainfont{Calibri Bold.ttf}\textbf{Platforms} &	Windows 8/7, Ubuntu \\ \hhline{|-|-|}
+\setmainfont{Calibri Bold.ttf}\textbf{Softwares} &	Matlab 2013a(Basics), Microsoft Office 2013 \\ \hhline{|-|-|}
+\setmainfont{Calibri Bold.ttf}\textbf{Client Side} &	HTML, CSS3, PHP, Bootstrap 3 \\ \hhline{|-|-|}
+\setmainfont{Calibri Bold.ttf}\textbf{Server Side} &	jQuery, SQL, MySQL \\ \hhline{|-|-|}
+\setmainfont{Calibri Bold.ttf}\textbf{IDE}	 & Eclipse \\ \hhline{|-|-|}
+
+\end{tabular}
+\subsection*{\colorbox{LightCyan}{\setmainfont{Calibri Bold.ttf}\textbf{Courses}}}
+\begin{tabular}[H]{|p{6cm}|p{5cm}|p{6cm}|}
+\hline
+Programming and Data Structures in C &	Introduction to Electronics &	Linear Algebra \\ \hline
+Differential Calculus &	Complex Analysis &	Probability and Statistics \\ \hline
+Data Structures and Algorithms(I \& II)	& Discrete Mathematics &	Introduction to Logic \\ \hline
+Software Engineering &	Computer Organization &	Theory Of Computation \\  \hline
+Computer Networks & Operating Systems & Artificial Intelligence \\ \hline
+\multicolumn{3}{|c|}{Principles of Database Systems} \\
+\hline
+\end{tabular}
+%\subsection*{\colorbox{LightCyan}{\setmainfont{Calibri Bold.ttf}\textbf{Courses to Complete}}}
+%\begin{tabular}[H]{|p{8.5cm}|p{9cm}|}
+%\hline
+%Computer Networks &	Operating System \\ \hline
+%Artificial Intelligence &	Principals of Database Systems \\ \hline
+%\end{tabular}
+\subsection*{\colorbox{LightCyan}{\setmainfont{Calibri Bold.ttf}\textbf{Leadership Skills}}}
+\begingroup
+%\fontsize{5pt}{10pt}%\setmainfont{arial.ttf}
+\begin{tabular}[H]{|p{3.5cm}|p{14cm}|}
+\hhline{|-|-|}
+\setmainfont{Calibri Bold.ttf}\textbf{2013 - 2014}	& Member of Mess Management Committee  \tabularnewline \hhline{|-|-|}
+\setmainfont{Calibri Bold.ttf}\textbf{IGNUS Fest 2013}	& Core Team Member, Taj IITJ Conclave  \tabularnewline \hhline{|-|-|}
+\end{tabular}
+\endgroup
+\subsection*{\colorbox{LightCyan}{\setmainfont{Calibri Bold.ttf}\textbf{Achievements}}}
+\begin{tabular}[H]{|>{\centering\arraybackslash}p{3cm}|p{14.5cm}|}
+\hline
+\setmainfont{Calibri Bold.ttf}\textbf{Year} &	\setmainfont{Calibri Bold.ttf}Achievement \\ \hline
+\setmainfont{Calibri Bold.ttf}\textbf{2013} &	Qualified for final round in Web craft event organized by IGNUS, A tech-cult fest of IIT Jodhpur \\ \hline
+\setmainfont{Calibri Bold.ttf}\textbf{2011} &	Rank {\setmainfont{Calibri Bold.ttf}\textbf{3763}} in IIT-JEE 2011 among 4.8 lakh students. \\ \hline
+\setmainfont{Calibri Bold.ttf}\textbf{2009} &	Merit Certificate for obtaining the highest marks in {\setmainfont{Calibri Bold.ttf}\textbf{Social Sciences, English \& Science}} in CBSE X Board \\ \hline
+\multirow{2}{*}{\setmainfont{Calibri Bold.ttf}\textbf{2009}} &	\multirow{1}{*}{CBSE National Level Science Exhibition:}\\  & \multirow{1}{*}{Water Conservation Model at home(Won at Regional Level Exhibition)} \\ \hline
+
+\end{tabular}
+
+\iffalse
+I don't want this to happen
+\begin{tabular}[H]{|p{3.5cm}|>{\centering\arraybackslash}p{3.5cm}|p{10cm}|}
+\hline
+%\textbf{Air Traffic Control \newline Software (\textit{Python})} &	\textit{Dr. Gaurav Harit \newline 
+%$5^{\mathbf{th}}$ Semester} &	Software is to \textbf{prevent collisions, organize and expedite the flow of traffic, and provide Information and other support for pilots}. \\ \hline
+\multirow{4}{*}{\setmainfont{Calibri Bold.ttf}\textbf{XML Parser GUI (Java)}} & \multirow{4}{*}{Dr. Gaurav Harit} & Software parsers an XML file for errors and builds document tree. It \\
+ & \multirow{4}{*}{$5^{\mathbf{th}}$ Semester} & constructs a tree with parent-child relationships. On clicking any node\\
+& & we get the attribute's names, its values, the node's parent \& children. \\ 
+& & The tree is resizable with options for creating a new node, editing a node, deleting a node \& changing parent-child relationships.\\ \hline
+\setmainfont{Calibri Bold.ttf}\textbf{Air Traffic Control} & Dr. Gaurav Harit & Software is to \textbf{prevent collisions, organize and expedite the flow of}\\
+\setmainfont{Calibri Bold.ttf}\textbf{Software (\textit{Python})} & $5^{\mathbf{th}}$ Semester & \textbf{traffic, and provide Information and other support for pilots.}\\ \hline
+\setmainfont{Calibri Bold.ttf}\textbf{Matrix Multiplication} &	\textit{Dr. K R Chowdhary} &	Implementing multiplications of two matrices of order m$\times$n and n$\times$p \\ 
+\setmainfont{Calibri Bold.ttf}\textbf{(\textit{Assembly Language})} &  $5^{\mathbf{th}}$ \textit{Semester} & on an \textbf{Intel 8085 Microprocessor} using GNUSim 8085 Simulator.\\ \hline
+\setmainfont{Calibri Bold.ttf}\textbf{Properties of} &	\textit{Dr. Bibhas Adhikari}&	Properties such as presence of eulerian circuits, connectivity (edge and \\ 
+\setmainfont{Calibri Bold.ttf}\textbf{Hamming Graphs} &  $4^{\mathbf{th}}$ \textit{Semester} & vertex), regularity, diameter etc. were studied.\\ \hline
+\multirow{2}{*}{\setmainfont{Calibri Bold.ttf}\textbf{First ODE Solver}} &	\textit{Dr. Arnab Datta} &	Designed an \textbf{Analog Circuit} which was capable of solving first ODE using\\
+  & $3^{\mathbf{rd}}$ \textit{Semester} &  \textbf{OpAmp, capacitors, CRO}.\\ \hline
+\multirow{3}{*}{\setmainfont{Calibri Bold.ttf}\textbf{ATM Software(\textit{C})}} &	\multirow{2}{*}{\textit{Dr. Aushotosh Dwivedi }} &	Software performs the basic \textbf{functions of ATM like printing transcripts}\\ 
+ & \multirow{2}{*}{$1^{\mathbf{st}}$ \textit{Semester}} & of transactions, withdrawal of money, updating money in the person’s\\ 
+  & &\textbf{account, keeping record of transactions in a separate log file.} \\ \hline
+\multirow{2}{*}{\setmainfont{Calibri Bold.ttf}\textbf{Algorithms}} &	\textit{Dr. Anupam Gupta} &	\textbf{Awakening a swarm of robots given an awakened robot} \\
+&  \textit{Summer 2013} & {\setmainfont{Calibri Bold.ttf}$\theta(n^{2}\log n)$} (The position of sleeping robots is known).\\ \hline
+\end{tabular}
+
+
+
+
+
+
+
+
+\ifflase
+\subsection*{\colorbox{DarkCyan}{\setmainfont{Calibri Bold.ttf}\textbf{Academic Qualifications}}}
+\begin{tabular}[h]{|>{\centering\arraybackslash}p{2.4cm}|>{\centering\arraybackslash}p{4cm}|>{\centering\arraybackslash}p{6cm}|>{\centering\arraybackslash}p{4.1cm}|}
+\hhline{|-|-|-|-|}
+\rowcolor{LightCyan}
+\setmainfont{Calibri Bold.ttf}\textbf{Year} & \setmainfont{Calibri Bold.ttf}\textbf{Board/Degree}	& \setmainfont{Calibri Bold.ttf}\textbf{School/Institution} & \setmainfont{Calibri Bold.ttf}\textbf{CPI (/10)/Percentage (\%)} \tabularnewline \hhline{|-|-|-|-|}
+2011 - Present &	B. Tech(\textbfmt{5}{th} Semester) &	IIT Jodhpur &	8.81\\ \hline
+2011 &	Intermediate Board, AP &	  Narayana Junior College, Hyderabad &	95.1\\ \hline
+2009 &	CBSE Board &	Jindal Vidya Mandir &	97.8\\ \hline
+\end{tabular}
+\subsection*{\colorbox{DarkCyan}{\setmainfont{Calibri Bold.ttf}\textbf{Areas of Interest}}}
+\begin{tabular}[h]{|M|M|}
+\hline
+Algorithms	& Programming \\ \hline
+Graph Theory &	Computer Networks \\ \hline
+\end{tabular}
+\subsection*{\colorbox{DarkCyan}{\setmainfont{Calibri Bold.ttf}\textbf{Course Projects}}}
+\begin{tabular}[H]{!{\color{blue}\vrule}>{\columncolor{LightCyan}}p{3.5cm}!{\color{blue}\vrule}>{\centering\arraybackslash}p{3.5cm}!{\color{blue}\vrule}p{10cm}!{\color{blue}\vrule}}
+\arrayrulecolor{blue}\hline
+ & \multirow{4}{*}{\textitci{Dr. Gaurav Harit}} & Software parsers an XML file for errors and builds document tree. It \\
+ & \multirow{4}{*}{\textbfmt{5}{th} Semester} & constructs a tree with parent-child relationships. On clicking any node\\
+& & we get the attribute's names, its values, the node's parent \& children. \\ 
+\multirow{-4}{*}{\setmainfont{Calibri Bold.ttf}\textbf{XML Parser GUI (Java)}} & & The tree is resizable with options for creating a new node, editing a node, deleting a node \& changing parent-child relationships.\\ \hline
+\setmainfont{Calibri Bold.ttf}\textbf{Air Traffic Control} & \textitci{Dr. Gaurav Harit} &  Software is to \textbf{prevent collisions, organize and expedite the flow of}\\ %$\cdot$
+\setmainfont{Calibri Bold.ttf}\textbf{Software (\textit{Python})} & \textbfmt{5}{th} Semester & \textbf{traffic, and provide Information and other support for pilots.}\\ \hline
+\setmainfont{Calibri Bold.ttf}\textbf{Matrix Multiplication} &	\textitci{Dr. K R Chowdhary} &	Implementing multiplications of two matrices of order m$\times$n and n$\times$p \\ 
+\setmainfont{Calibri Bold.ttf}\textbf{(\textit{Assembly Language})} &  \textbfmt{5}{th} \textit{Semester} & on an \textbf{Intel 8085 Microprocessor} using GNUSim 8085 Simulator.\\ \hline
+\setmainfont{Calibri Bold.ttf}\textbf{Properties of} &	\textitci{Dr. Bibhas Adhikari}&	Properties such as presence of eulerian circuits, connectivity (edge and \\ 
+\setmainfont{Calibri Bold.ttf}\textbf{Hamming Graphs} &  \textbfmt{4}{th} \textit{Semester} & vertex), regularity, diameter etc. were studied.\\ \hline
+ &	\textit{Dr. Arnab Datta} &	Designed an \textbf{Analog Circuit} which was capable of solving first ODE using\\
+\multirow{-2}{*}{\setmainfont{Calibri Bold.ttf}\textbf{First ODE Solver}}  & \textbfmt{3}{rd} \textit{Semester} &  \textbf{OpAmp, capacitors, CRO}.\\ \hline
+ &	\multirow{2}{*}{\textitci{Dr. Aushotosh Dwivedi }} &	Software performs the basic \textbf{functions of ATM like printing transcripts}\\ 
+ & \multirow{2}{*}{\textbfmt{1}{st} \textit{Semester}} & of transactions, withdrawal of money, updating money in the person’s\\ 
+\multirow{-3}{*}{\setmainfont{Calibri Bold.ttf}\textbf{ATM Software(\textit{C})}}  & &\textbf{account, keeping record of transactions in a separate log file.} \\ \hline
+ &	\textitci{Dr. Anupam Gupta} &	\textbf{Awakening a swarm of robots given an awakened robot} \\
+\multirow{-2}{*}{\setmainfont{Calibri Bold.ttf}\textbf{Algorithms}} &  \textit{Summer 2013} & \textbfmtf{$\theta$}{(n}{2}{$\log$}{n)} (The position of sleeping robots is known).\\ \hline % {\setmainfont{Calibri Bold.ttf}$\mathbf{\theta(n^{2}\log n)}$}
+\end{tabular}%}
+%\end{center}
+\subsection*{\colorbox{DarkCyan}{\setmainfont{Calibri Bold.ttf}\textbf{Technical Skills}}}
+\begin{tabular}[H]{|>{\columncolor{LightCyan}}p{8.5cm}|p{9cm}|}
+\hhline{|-|-|}
+\setmainfont{Calibri Bold.ttf}\textbf{Programming Languages} &	C, Java, Python, Latex \\ \hhline{|-|-|}
+\setmainfont{Calibri Bold.ttf}\textbf{Microprocessor} &	8085 \\ \hhline{|-|-|}
+\setmainfont{Calibri Bold.ttf}\textbf{Platforms} &	Windows 8/7, Ubuntu \\ \hhline{|-|-|}
+\setmainfont{Calibri Bold.ttf}\textbf{Softwares} &	Matlab 2013a, Microsoft Office 2013 \\ \hhline{|-|-|}
+\setmainfont{Calibri Bold.ttf}\textbf{Web Programming Languages} &	HTML, CSS3,PHP \\ \hhline{|-|-|}
+\setmainfont{Calibri Bold.ttf}\textbf{IDE}	 & Eclipse \\ \hhline{|-|-|}
+
+\end{tabular}
+\subsection*{\colorbox{DarkCyan}{\setmainfont{Calibri Bold.ttf}\textbf{Courses Completed}}}
+\begin{tabular}[H]{|p{6cm}|p{5cm}|p{6cm}|}
+\hline
+Programming and Data Structures in C &	Introduction to Electronics &	Linear Algebra \\ \hline
+Differential Calculus &	Complex Analysis &	Probability and Statistics \\ \hline
+Data Structures and Algorithms(I \& II)	& Discrete Mathematics &	Introduction to Logic \\ \hline
+Software Engineering &	Computer Organization &	Theory Of Computation \\ \hline
+\end{tabular}
+\subsection*{\colorbox{DarkCyan}{\setmainfont{Calibri Bold.ttf}\textbf{Courses to Complete}}}
+\begin{tabular}[H]{|p{8.5cm}|p{9cm}|}
+\hline
+Computer Networks &	Operating System \\ \hline
+Artificial Intelligence &	Principals of Database Systems \\ \hline
+\end{tabular}
+\subsection*{\colorbox{DarkCyan}{\setmainfont{Calibri Bold.ttf}\textbf{Leadership Skills}}}
+\begingroup
+%\fontsize{5pt}{10pt}%\setmainfont{arial.ttf}
+\begin{tabular}[H]{|>{\columncolor{LightCyan}}p{3.5cm}|p{14cm}|}
+\hhline{|-|-|}
+\setmainfont{Calibri Bold.ttf}\textbf{2013 - 2014}	& Member of Mess Management Committee  \tabularnewline \hhline{|-|-|}
+\setmainfont{Calibri Bold.ttf}\textbf{Ignus Fest 2013}	& Core Team Member, Taj IITJ Conclave  \tabularnewline \hhline{|-|-|}
+\end{tabular}
+\endgroup
+\subsection*{\colorbox{DarkCyan}{\setmainfont{Calibri Bold.ttf}\textbf{Achievements}}}
+\begin{tabular}[H]{|>{\centering\arraybackslash}>{\columncolor{LightCyan}}p{3cm}|p{14.5cm}|}
+\hline
+\setmainfont{Calibri Bold.ttf}\textbf{Year} &	\setmainfont{Calibri Bold.ttf}Achievement \\ \hline
+\setmainfont{Calibri Bold.ttf}\textbf{2013} &	Qualified for final round in Web craft event organized by IGNUS, A tech-cult fest of IIT Jodhpur \\ \hline
+\setmainfont{Calibri Bold.ttf}\textbf{2011} &	Rank {\setmainfont{Calibri Bold.ttf}\textbf{3763}} in IIT-JEE 2011 among 4.8 lakh students. \\ \hline
+\setmainfont{Calibri Bold.ttf}\textbf{2009} &	Merit Certificate for obtaining the highest marks in {\setmainfont{Calibri Bold.ttf}\textbf{Social Sciences, English \& Science}} in CBSE X Board \\ \hline
+ &	\multirow{1}{*}{CBSE National Level Science Exhibition:}\\ 
+\multirow{-2}{*}{\setmainfont{Calibri Bold.ttf}\textbf{2009}} & \multirow{1}{*}{Water Conservation Model at home(Won at Regional Level Exhibition)} \\ \hline
+
+\end{tabular}
+\fi
+\end{mybox}
+\end{document}

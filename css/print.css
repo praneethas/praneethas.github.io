@@ -1,0 +1,141 @@
+@media print{
+  @page {
+      margin-top: 1px;
+      margin-left: 1px;
+      margin-right: 1px;
+      margin-bottom: 1px;
+      padding-top: 0px;
+  }
+
+  body{
+    -webkit-print-color-adjust:exact;
+  }
+
+  #print{
+    display: none;
+  }
+
+  a.mail{
+    color: #428bca;
+  }
+
+  .well{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-width: 3px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  a[href]:after {
+    display: none;
+  }
+
+  .body{
+    font-size: 12px;
+  }
+
+  .heading{
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: 200;
+    margin-bottom: 2px;
+  }
+
+  ul{
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  hr{
+    margin-bottom: 3px;
+    margin-top: 3px;
+  }
+
+  .info{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .table{
+    margin-bottom: 2px;
+  }
+  .sectionName{
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  .table>tbody>tr>th.edu, .table>tbody>tr>td.edu{
+    padding: 0.25px;
+    text-align: center;
+  }
+
+  .table>tbody>tr>td.int{
+    padding: 0.25px;
+    text-align: center;
+  }
+
+  .table>tbody>tr>td.skh{
+    padding: 0.25px;
+    padding-right: 10px;
+    text-align: right;
+  }
+
+  .table>tbody>tr>td.sk{
+    padding: 0.25px;
+    padding-left: 10px;
+    text-align: left;
+  }
+
+  .table>tbody>tr>td.ach{
+    padding: 0.25px;
+    padding-right: 10px;
+    text-align: center;
+  }
+
+  .table>tbody>tr>td.ac{
+    padding: 0.25px;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .table>tbody>tr>td.leadh{
+    padding: 0.25px;
+    padding-right: 10px;
+    text-align: right;
+  }
+
+  .table>tbody>tr>td.lead{
+    padding: 0.25px;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .table>tbody>tr>td.pr-name, .table>tbody>tr>td.pr-guide, .table>tbody>tr>td.pr-info{
+    padding: 0.25px;
+    padding-left: 10px;
+  }
+
+  .table>tbody>tr>td.pr-name, .table>tbody>tr>td.pr-guide{
+    padding: 0.25px;
+    padding-left: 5px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+   .table>tbody>tr>td.pr-info{
+      padding: 0.25px;
+      padding-right: 5px;
+    }
+
+    .footer{
+    display: none;
+  }
+}

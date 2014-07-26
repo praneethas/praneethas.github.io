@@ -1,0 +1,111 @@
+<head>
+  <script type="text/javascript" src="js/wellTabs.js"></script>
+</head>
+<body>
+  <div class="well" style="text-align: left;">
+      <ul class="nav nav-pills nav-justified" id="semTabs">
+        <li class="active"><a data-target="#GATE" data-toggle="tab">GATE</a></li>
+        <li><a data-target="#TeX" data-toggle="tab">TeX</a></li>
+        <li><a data-target="#Inter" data-toggle="tab">Interviews</a></li>
+      </ul>
+      <hr style="border-color: black;">
+      <div class="tab-content">
+        <div class="tab-pane active" id="GATE">
+          <div class="row">
+            <div class="col-md-6">
+              <center><h3>Computer Networks</h3></center>
+              <center><div id="myCarousel1" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel1" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="images/OS/OSSilberschatz.jpg" alt="First slide">
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <p><a href="books/OS/Silberschatz Operating System Concepts 9th txtbk.pdf" class="btn btn-primary btn-xs" role="button" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="images/CN/Tanebaum-ComputerNetworks5ed.PNG" alt="First slide">
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <p><a href="books/CN/Computer Networks - A Tanenbaum - 5th edition.pdf" class="btn btn-primary btn-xs" role="button" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="left carousel-control" href="#myCarousel1" data-slide="prev" style="border-radius: 10px;"><span class="glyphicon glyphicon-chevron-left"></span></a>
+              <a class="right carousel-control" href="#myCarousel1" data-slide="next" style="border-radius: 10px;"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div></center><!-- /.carousel -->
+          </div>
+          <div class="col-md-6">
+            <center><h3>Database Systems</h3></center>
+              <center><div id="myCarousel1" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel1" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="images/OS/OSSilberschatz.jpg" alt="First slide">
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <p><a href="books/OS/Silberschatz Operating System Concepts 9th txtbk.pdf" class="btn btn-primary btn-xs" role="button" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="images/CN/Tanebaum-ComputerNetworks5ed.PNG" alt="First slide">
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <p><a href="books/CN/Computer Networks - A Tanenbaum - 5th edition.pdf" class="btn btn-primary btn-xs" role="button" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="left carousel-control" href="#myCarousel1" data-slide="prev" style="border-radius: 10px;"><span class="glyphicon glyphicon-chevron-left"></span></a>
+              <a class="right carousel-control" href="#myCarousel1" data-slide="next" style="border-radius: 10px;"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div></center><!-- /.carousel -->
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="TeX">
+        </div>
+        <div class="tab-pane" id="Inter">
+        </div>
+      </div>
+    <br/><br/><br/><br/>
+  </div>
+  <br/><br/>
+  <script type="text/javascript">
+    var wellMWidth = parseInt($('div.well').css("max-width"));
+    var wellMHeight = parseInt($('div.well').css("max-height"));
+    var cHeight = 0.63*wellMHeight;
+    var cWidth = 0.28*wellMWidth;
+    var pLeft = 20;
+    var pRight = 20;
+    console.log("wellMWidth: " + wellMWidth);
+    $( document ).ready(function() {
+        $(".carousel-inner>.item>img").css('height', cHeight+'px');
+        $(".carousel-inner>.item>img").css('width', cWidth+'px');
+        //$(".carousel-inner>.item>.container").css('height', cHeight+'px');
+        //$(".carousel-inner>.item>.container").css('width', cWidth+'px');
+        //$(".carousel-inner>.item>.container").css({"padding-left": pLeft+'px', "padding-right": pRight+'px'});
+        $(".carousel-inner").css('width', cWidth+'px');
+        $("div#myCarousel.carousel.slide").css('width', cWidth+'px');
+        $("div#myCarousel1.carousel.slide").css('width', cWidth+'px');
+        $(".carousel-inner").css('height', cHeight+'px');
+        //$(".carousel-inner,div#myCarousel.carousel.slide,.carousel-inner>.item>img").css('border-radius', '10px');
+        $(".carousel-inner,div#myCarousel.carousel.slide,.container").css('border-radius', '10px');
+        $("div#myCarousel.carousel.slide").css('height', cHeight+'px');
+        var carouselHeight =  $(".carousel-inner>.item>img").css("max-height");
+        var carouselWidth = $(".carousel-inner>.item>img").css("max-width");
+        //console.log("wellMHeight: " + wellMHeight + " carouselHeight: " + carouselHeight + " imHeight: " + imHeight + " imWidth: " + imWidth);
+      });
+  </script>
+</body>

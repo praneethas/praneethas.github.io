@@ -1,0 +1,105 @@
+.well{
+  border-width: 5px; 
+  border-radius: 20px; 
+  border-color: #2A03F7;
+  margin-top: 40px;
+  margin-left: 60px;
+  margin-right: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 80px;
+}
+
+body{
+    -webkit-print-color-adjust:exact;
+}
+
+.heading{
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.left{
+  /*float: left;
+  clear: left;*/
+  text-align: left;
+  padding: 1px;
+}
+
+.right{
+  /*float: right;
+  clear: right;*/
+  text-align: right;
+  padding: 1px;
+}
+
+.info{
+  margin-bottom: 0px;
+}
+
+.sectionName{
+  font-weight: 400;
+  font-size: 25px;
+  text-decoration: none;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-radius: 5px;
+  width: 40%;
+  background-color: #52D7F8;
+}
+
+.table>tbody>tr>th.edu, .table>tbody>tr>td.edu{
+    text-align: center;
+}
+
+.table>tbody>tr>th.edu{
+  background-color: #AEAEF5;
+}
+
+.table>tbody>tr>td.skh{
+    text-align: right;
+    font-weight: 800;
+    background-color: #AEAEF5;
+}
+
+.table>tbody>tr>td.sk{
+    text-align: left;
+}
+
+.table>tbody>tr>td.leadh{
+    text-align: right;
+    font-weight: 800;
+    background-color: #AEAEF5;
+}
+
+.table>tbody>tr>td.lead{
+    text-align: left;
+    font-size: 15px;
+}
+
+.table>tbody>tr>td.ach{
+    text-align: right;
+    font-weight: 800;
+    background-color: #AEAEF5;
+}
+
+.table>tbody>tr>td.ac{
+    text-align: left;
+    font-size: 15px;
+}
+
+.table>tbody>tr>td.pr-name{
+  background-color: #AEAEF5;
+}
+
+.footer {
+  position: fixed;
+  font-family: Roboto;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 70px;
+  border-top: 1px solid #e5e5e5;
+  background-color: #f5f5f5;
+}

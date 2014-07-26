@@ -1,0 +1,94 @@
+.well {
+	background-color: #fcfcfc;
+}
+
+.well-box{
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: none;
+  	border-radius: 0px;
+  	min-height: 0px;
+	padding: 0px 0 0 0;
+    /*padding-bottom: 0.5em;*/
+	bottom: 0;
+  	margin-bottom: -10px;
+}
+
+.footer {
+    position: fixed;
+    /*height: 100px;*/
+    bottom: 0;
+    width: 100%;
+}
+
+.pr-name{
+    text-align:center;
+    font-weight:bold;
+}
+
+.pr-guide{
+    text-align:center;
+    font-style: italic;
+}
+
+.ac-year{
+    text-align:center;
+    font-weight:bold;
+    width: 25%;
+}
+
+.ac-achieve{
+    text-align:left;
+    /*font-style: italic;*/
+}
+
+.ld-year{
+    text-align:center;
+    font-weight:bold;
+    width: 50%;
+}
+
+.ld-achieve{
+    text-align:left;
+    /*font-style: italic;*/
+}
+
+.tc-name{
+    text-align:left;
+    font-weight:bold;
+    width: 50%;
+}
+
+.tc-info{
+    text-align:left;
+    /*font-style: italic;*/
+}
+
+.c-name{
+    text-align:left;
+    width: 50%
+}
+
+a.google:hover{
+    color: red;
+}
+
+a.facebook:hover{
+    color: blue;
+}
+
+a:hover .icon-google_plus_circle{
+    color: red;
+}
+
+a:hover .icon-linked_in_circle{
+    color: rgb(103, 194, 255);
+}
+
+a:hover .icon-facebook_circle{
+    color: blue;
+}
+
+.active{
+    background-color: ;
+}
